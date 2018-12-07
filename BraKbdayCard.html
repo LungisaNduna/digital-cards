@@ -196,12 +196,12 @@
         <div id="card">
             <div id="card-inside">
                 <div class="wrap">
-                  <p>Hey Uncle/Great Uncle</p>
-                  <p>It is amazing that you have made it another year.</p>
-                  <p>We pray for your continued long life and that you are blessed for the rest of your years.</p>
-                  <p>We also thank you for the support you have been for both Mom and Us. With which one of us 
-                     has been able to dedicate time to learning the skills required to pull of a trick like this one.</p>
-                  <p></p>
+                  <p>Hey Bra K/Uncle K</p>
+                  <p>Great to see you have made it through another year.</p>
+                  <p>Since you made it so far don't fall off now we still have to reconnect</p>
+                  <p>Hope we can all see you soon.</p>
+                  <img height="100px" width="400px" src="https://lh3.googleusercontent.com/5CZm84LGhb8uMJBDRIkKoFuL-rcvLZkzBO8Ql3IUmS4OIh6YcJDBhcx5ryZFIWbcLLn5Jf5axyPnm-neqDFQlyh2NVaBBTVTSi49OISc1woULPiWcGD14JRE2gnwJLwvCLN5b2I51Dnr8b7iaPo8e_QpU-ts3kmOQU2rnfvUOBpua8iOH2OOlEki_yPpevlUA4AaTbSIU96EbF3xjaGVtM7oZpX9veEsaVqtEdp7FEPYQ8Z4CaYDJTYspK0YWmsf2W_JNvFyxEQq6EAx9WO1zhh6Bxf0DMi0x5Q0ajAkj-wMwQ6S0h993qAtHincvcjr7HzxVw-sPhunJ8L9GLJTXk-MnWqXf2Vn9nfKUFJSpep5IGlJIx_R65kDvFKpo_2bwhSqdDVFu1pzH6JuASRkx2KLSUSMxZ0QAiKhj4tnrwHVrdtaPnIcfKpH96FBeYrdIC5WtYm4SkdImscEK7piX0P3X-T1MGgtu7ZSp1eGe67DYFWg7a_3yIwxh4dJyxoaWl_iRUhUZm_hiCSlRyvBbVdMMog-XUtKh_S_vc9fvCzby-V4l5teS7ywmmx0PofCHXXUsSaZsKWhmGSzWApD-OZysg8Asf5fKYiFzqLbw-YC880EgNPfk4eySyHt3YCjS9Vk066wrkgvzVBZGFtR5_gt=w654-h218-no"/>
+                  <p>Joburg division of the</p>
                   <p class="signed">The L Nduna(s)</p>
                         
                 </div>
@@ -217,35 +217,46 @@
         </div>
     
         <script>
-            (function() {
-                function $(id) {
-                    return document.getElementById(id);
-                }
-
-                var card = $('card'),
-                    openB = $('open'),
-                    closeB = $('close'),
-                    timer = null;
-                console.log('wat', card);
-                openB.addEventListener('click', function () {
-                    card.setAttribute('class', 'open-half');
-                    if (timer) clearTimeout(timer);
-                    timer = setTimeout(function () {
-                    card.setAttribute('class', 'open-fully');
-                    timer = null;
-                    }, 1000);
-                });
-
-                closeB.addEventListener('click', function () {
-                    card.setAttribute('class', 'close-half');
-                    if (timer) clearTimerout(timer);
-                    timer = setTimeout(function () {
-                    card.setAttribute('class', '');
-                    timer = null;
-                    }, 1000);
-                });
-
-                }());
-        </script>
+                (function() {
+    
+                    var a = new Audio("http://jakesallstarkaraoke.com/media/Kool_and_The_Gang_-_Celebration.mp3");
+                    function playSound() {
+                            a.play();
+                    }
+    
+                    function stopSound() {
+                        a.pause();
+                        a.currentTime = 0;
+                    }
+    
+                    var card = document.getElementById('card'),
+                        openB = document.getElementById('open'),
+                        closeB = document.getElementById('close'),
+                        timer = null;
+                    console.log('wat', card);
+                    openB.addEventListener('click', function () {
+                        card.setAttribute('class', 'open-half');
+                        if (timer) clearTimeout(timer);
+                        timer = setTimeout(function () {
+                        card.setAttribute('class', 'open-fully');
+                        timer = null;
+                        }, 1000);
+                    
+                    playSound();
+                        
+                    });
+    
+                    closeB.addEventListener('click', function () {
+                        card.setAttribute('class', 'close-half');
+                        if (timer) clearTimerout(timer);
+                        timer = setTimeout(function () {
+                        card.setAttribute('class', '');
+                        timer = null;
+                        }, 1000);
+                        stopSound();
+                    });
+    
+                    }());
+            </script>
     </body>
 </html>
