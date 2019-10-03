@@ -1,0 +1,43 @@
+header{
+    background-image: url("./resources/header-bg.png");
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("./resources/background-image.gif");
+}
+
+aside{
+    width: 40%;
+    float: right;
+    padding: 1%;
+    margin: 1%;
+    align-content: center;
+}
+
+main{
+    width: 50%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+    align-content: center;
+}
+
+section{
+    background-color: rgba(192,192,192,0.4);
+    padding: 2%;
+    border-radius: 25px;
+    margin: 1%;
+}
+
+@media screen and (max-width: 600px) {
+    main, aside{
+        width: 100%;
+        float: none;
+    }
+    header > img {
+        width:90%;
+    }
+  }
