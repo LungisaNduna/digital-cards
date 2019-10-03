@@ -1,0 +1,24 @@
+{
+  "name": "digital-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LungisaNduna/digital-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "homepage":"https://LungisaNduna.github.io/digital-cards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LungisaNduna/digital-cards/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
